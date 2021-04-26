@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自定义属性</title>
+</head>
+<body>
+<script>
+    var obj = {}
+
+    Object.defineProperty(obj,"sex",{
+        value : "Male",  //属性的值
+        configurable : true,     //属性是否可以被delete删除
+        writable : true,         //属性是否可被修改
+        enumerable : true,       //属性是否可枚翠 for in  、 keys 、 entries()
+    })
+
+    Object.defineProperty(obj,"age",{
+        value: 11 ,
+        enumerable: false,
+        configurable : false,
+        writable: true
+    })
+
+    obj.email = "gutaun@qq.com"
+    console.log(obj)
+
+    // delete 删除
+    delete obj.age
+    console.log("delete age 之后:",obj)
+
+    // 枚翠
+    for(k in obj){
+        console.log(k)
+    }
+
+    obj.sex = "Female"
+    obj.age = 88
+    console.log(obj)
+
+    console.log(Object.keys(obj))
+
+</script>
+</body>
+</html>
