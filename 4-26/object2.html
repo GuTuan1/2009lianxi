@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var obj = {
+            name : "wuqu",
+            age : 11,
+            sex :"buzhidao"
+        }
+
+        // 向 obj中添加一个属性email
+        obj.email = "gutaun@qq.com"
+
+        console.log(obj)
+        // 删除obj对象中的 age属性
+        delete obj.age
+        console.log(obj)
+
+        // 对象的枚翠 for in
+        for(k in obj){
+            console.log(k,obj[k])
+        }
+
+        var obj1 = new Object()
+
+        Object.defineProperty(obj1,"name",{
+
+        })
+    
+    </script>
+</body>
+</html>
