@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原型 prototype</title>
+</head>
+
+<body>
+    <script>
+
+        var arr = new Array()
+
+        // function hello()
+        // {
+
+        // }
+
+        // console.log(hello.prototype)
+        // console.log(typeof hello.prototype)
+
+
+
+        // var obj = {}
+        // obj.name = "故團"
+        // obj.age = 19
+        // obj.sex = "保密"
+        // console.log(obj)
+        // 定义一个构造函数
+        function Person(name,sex,age) {
+            this.name = name
+            this.age = age
+            this.sex = sex
+        }
+
+        // console.log(Person.prototype)
+
+        Person.prototype.name = "noname"
+        Person.prototype.age = 0
+        Person.prototype.sex = "保密 "
+        var p1 = new Person()
+        console.log(p1)
+        console.log(p1.name)
+        console.log(p1.age)
+        console.log(p1.sex)
+
+        var p2 = new Person()
+        console.log(p2)
+        console.log(p2.name)
+        console.log(p2.age)
+        console.log(p2.sex)
+
+        var p3 = new Person("無趣",20,"保密")
+        console.log(p3)
+
+    </script>
+</body>
+
+</html>
