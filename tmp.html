@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = new Array()
+        console.log(Array.prototype)
+
+        arr.push(22)
+        arr.push(33)
+        arr.pop()
+
+
+        Array.prototype.trim = function(){
+            alert(111)
+        }
+
+        arr.trim()
+    </script>
+</body>
+</html>
