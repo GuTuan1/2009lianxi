@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" class="btn">A</button>
+    <button type="button" class="btn">B</button>
+    <button type="button" class="btn">C</button>
+    <button type="button" class="btn">D</button>
+    <button type="button" class="btn">E</button>
+
+    <script>
+        var btn = document.querySelectorAll('.btn');
+        var i
+        for(let i=0;i<btn.length;i++)
+        {
+            btn[i].onclick = function(){
+                alert(i)
+            }
+        }
+
+
+        // // 将一个HTML集合变成数组
+        // var arr = Array.prototype.slice.call(btn)
+        // console.log(arr)
+        // arr.forEach(function(v,k) {
+        //     v.addEventListener("click",function(){
+        //         alert(k)
+        //     })
+        // });
+    </script>
+</body>
+</html>
