@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj1 = {
+            name : "gutuan",
+            age : 11,
+            hello : function(){
+                console.log("Hello world")
+            },
+            haha(){
+                console.log("haha")
+            }
+        }
+
+        let name = "wuqu"
+        let age = 22
+        let say = function(){
+            console.log("haha")
+        }
+
+        let obj2 = {
+            name,age,say
+        }
+
+        console.log(obj2)
+        obj2.say()
+    </script>
+</body>
+</html> 
